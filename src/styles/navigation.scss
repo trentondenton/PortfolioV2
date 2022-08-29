@@ -1,0 +1,50 @@
+.navigation-container {
+  display: flex;
+  height: 100px;
+  width: 96%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  font-size: 2rem;
+
+  img {
+    height: 60px;
+    width: 100%;
+  }
+
+  .nav-menu {
+    display: flex;
+    align-items: center;
+    height: 50%;
+    transition: 0.5s ease-in-out all;
+    cursor: pointer;
+
+    ul,
+    a {
+      list-style: none;
+      text-decoration: none;
+    }
+  }
+
+  .nav-menu-open {
+    text-align: left;
+    width: 100%;
+    background-color: white;
+    transition: 0.5s ease-in-out all;
+
+    &:nth-child(1) {
+      text-align: end;
+      color: firebrick;
+    }
+
+    a {
+      color: black;
+      padding: 5px;
+      transition: all 0.5s ease-in-out;
+
+      &:hover {
+        color: $accentColor;
+      }
+    }
+  }
+}

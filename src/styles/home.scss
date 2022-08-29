@@ -1,0 +1,55 @@
+.home-page {
+  .portfolio-pic {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+
+    .image-circle {
+      width: 300px;
+      height: 300px;
+      border-radius: 100%;
+      overflow: hidden;
+      position: relative;
+      margin-bottom: -150px;
+
+      img {
+        width: 300px;
+        height: 300px;
+      }
+
+    }
+
+  }
+
+  .home-container {
+    height: 100%;
+    width: 100vw;
+    background-color: rgba(34, 34, 34, .95);
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .text-container {
+      padding-top: 150px;
+      max-width: 80%;
+      letter-spacing: 1px;
+      cursor: default;
+
+      .transparent {
+        color: transparent;
+        user-select: none;
+        height: none;
+        width: none;
+      }
+
+      .green {
+        position: absolute;
+        color: $accentColor;
+        user-select: all;
+      }
+    }
+  }
+}
