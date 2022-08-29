@@ -7,7 +7,7 @@ function Contact() {
       <h1>Contact Me</h1>
       <div className="contact-container">
         <div className="form-container">
-          <form action="https://formsubmit.co/trentondenton91@gmail.com" method="POST">
+          <form action="https://formsubmit.co/f5fa961f56f9dfc28b413b755d5e6c27" method="POST">
             <label>Name</label>
             <input type="name" onChange={() => { }} required />
 
