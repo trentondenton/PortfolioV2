@@ -1,11 +1,8 @@
 import React from 'react';
-import moment from 'moment';
-
 
 import profPic from '../assets/images/profpic.jpg';
 
 export default function Home() {
-  let day = moment().format('dddd');
   return (
     <div className='home-page'>
       <div className='portfolio-pic'>
