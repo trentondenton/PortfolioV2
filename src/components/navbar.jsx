@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
 
 import { IconEqualsOutline } from './icons';
 import Logo from '../assets/images/logo.png';
@@ -17,9 +16,9 @@ function Navbar() {
           {isExpanded ?
             <nav className="nav-menu-open">
               <li>""</li>
-              <li><NavLink to="/" onClick={expandNav}>Home</NavLink></li>
-              <li><NavLink to="/projects" onClick={expandNav}>Projects</NavLink></li>
-              <li><NavLink to="/contact" onClick={expandNav}>Contact</NavLink></li>
+              <li><a href="#home" onClick={expandNav}>Home</a></li>
+              <li><a href="#projects" onClick={expandNav}>Projects</a></li>
+              <li><a href="#contact" onClick={expandNav}>Contact</a></li>
             </nav>
             : <IconEqualsOutline onClick={expandNav} />
           }

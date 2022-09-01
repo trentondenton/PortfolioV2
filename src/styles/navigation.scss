@@ -1,11 +1,15 @@
 .navigation-container {
+  position: fixed;
+  top: 0;
   display: flex;
   height: 100px;
-  width: 96%;
+  width: 100vw;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
+  padding: 0 20px;
   font-size: 2rem;
+  margin: 0 -20px;
+  background-color: white;
 
   img {
     height: 60px;
@@ -31,11 +35,6 @@
     width: 100%;
     background-color: white;
     transition: 0.5s ease-in-out all;
-
-    &:nth-child(1) {
-      text-align: end;
-      color: firebrick;
-    }
 
     a {
       color: black;
