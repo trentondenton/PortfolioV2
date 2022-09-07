@@ -1,4 +1,9 @@
 @media (max-width: 650px) {
+  .main {
+    max-width: 100vw;
+    overflow: hidden;
+  }
+
   .home-page {
     .portfolio-pic {
       .image-circle {
