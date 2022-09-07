@@ -1,37 +1,28 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import striptags from "striptags";
-import Truncate from "react-truncate";
 
-import { IconChevronRightOutline } from '../components/icons';
-
+import { IconChevronRightOutline } from "../components/icons";
 const BlogItem = props => {
   const {
     id,
-    blog_status,
     content,
     title,
-    featured_image_url
-  } = props.blogItem;
+  } = props.post;
 
+  const truncate = (str, n) => {
+    return str.length >= n ? str.substr(0, n - 1) + '...' : str;
+  };
   return (
     <div>
       <Link to={`/b/${id}`}>
-        <h1>{title}</h1>
+        <h2>{title}</h2>
       </Link>
-      <div className="elipses-style">
-        <Truncate
-          lines={4}
-          ellipsis={
-            <span>
-              ... <Link to={`/b/${id}`}><IconChevronRightOutline /></Link>
-            </span>
-          }
-        >
-          {striptags(content)}
-        </Truncate>
+      <div className="posts-container">
+        {truncate(striptags(content), 416)}
+        <Link to={`/b/${id}`}><IconChevronRightOutline className="arrow-icon" /></Link>
       </div>
-    </div>
+    </div >
   );
 };
 

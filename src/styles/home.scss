@@ -9,7 +9,7 @@
       height: 300px;
       border-radius: 100%;
       overflow: hidden;
-      position: relative;
+      z-index: 110;
       margin-bottom: -150px;
       animation: 0.5s ease-in-out;
 
@@ -40,6 +40,7 @@
       max-width: 80%;
       letter-spacing: 1px;
       cursor: default;
+      padding-bottom: 100px;
 
       .transparent {
         color: transparent;

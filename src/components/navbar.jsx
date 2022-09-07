@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { HashLink as HLink } from 'react-router-hash-link';
+import { Link as RLink } from 'react-router-dom';
 
 import { IconEqualsOutline } from './icons';
 import Logo from '../assets/images/logo.png';
@@ -15,10 +17,10 @@ function Navbar() {
         <ul>
           {isExpanded ?
             <nav className="nav-menu-open">
-              <li>""</li>
-              <li><a href="#home" onClick={expandNav}>Home</a></li>
-              <li><a href="#projects" onClick={expandNav}>Projects</a></li>
-              <li><a href="#contact" onClick={expandNav}>Contact</a></li>
+              <li><HLink to="/#home" onClick={expandNav} smooth>Home</HLink></li>
+              <li><HLink to="/#projects" onClick={expandNav} smooth>Projects</HLink></li>
+              <li><HLink to="/#contact" onClick={expandNav} smooth>Contact</HLink></li>
+              <li><RLink to="/blog" onClick={expandNav} smooth>Blog</RLink></li>
             </nav>
             : <IconEqualsOutline onClick={expandNav} />
           }
