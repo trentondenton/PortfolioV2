@@ -63,8 +63,8 @@ const Chart = () => {
   };
   const content = isLoading ? (react_1.default.createElement("div", null, "Loading data...")) : (react_1.default.createElement("div", null,
     react_1.default.createElement("div", { className: "content__chart" },
-      react_1.default.createElement(ActivityChart_1.default, { labels: dates, name: `hours`, series: series })),
+      react_1.default.createElement(ActivityChart_1.default, { labels: dates, name: `hours`, series: series, color: 'white' })),
     react_1.default.createElement("div", { className: "content__title" })));
   return react_1.default.createElement("div", { className: "content" }, content);
 };
-exports.default = Chart;
+export default Chart;
