@@ -108,5 +108,5 @@ const ActivityChart = (props) => {
   return (react_1.default.createElement("div", { style: { width: "100%" } },
     react_1.default.createElement(react_apexcharts_1.default, { options: data.options, series: data.series, type: "area", height: 420 })));
 };
-exports.default = ActivityChart;
+export default ActivityChart;
 //# sourceMappingURL=ActivityChart.js.map
