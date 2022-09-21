@@ -1,6 +1,5 @@
 @import './variables.scss';
 @import './base.scss';
-@import './mixins.scss';
 @import './navigation.scss';
 
 // Home Styles
@@ -15,3 +14,7 @@
 @import './media.scss';
 // Blog Styles
 @import './blog.scss';
+// VCard Styles
+@import './vcard.scss';
+// Error Styles
+@import './error.scss';

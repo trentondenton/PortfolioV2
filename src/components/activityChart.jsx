@@ -109,4 +109,3 @@ const ActivityChart = (props) => {
     react_1.default.createElement(react_apexcharts_1.default, { options: data.options, series: data.series, type: "area", height: 420 })));
 };
 export default ActivityChart;
-//# sourceMappingURL=ActivityChart.js.map
