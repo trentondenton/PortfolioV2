@@ -25,7 +25,7 @@ function App() {
         <Route path="/blog" element={<Blog />} />
         <Route path="/b/:id" element={<BlogDetails params={params} />} />
         <Route path="/vcard" element={<VCard />} />
-        <Route path="/*" element={<NotFound />} />
+        <Route path="/" element={<NotFound />} />
       </Routes>
     </div>
   );
