@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
 import ReactHtmlParser from 'react-html-parser';
+import { Container, Card } from 'react-bootstrap';
 
 export default function BlogDetails() {
   const [blogItem, setBlogItem] = useState({});
@@ -26,13 +27,14 @@ export default function BlogDetails() {
     content,
   } = blogItem;
   return (
-    <div className="blog-details-container">
-      <h1>{title}</h1>
-
-      <div className="blog-content-container">
-        <div className="blog-content">{ReactHtmlParser(content)}</div>
-      </div>
-    </div>
+    <Container className="myflex" style={{ marginTop: '100px' }}>
+      <Card bg="secondary" style={{ maxWidth: '80vw' }}>
+        <Card.Title>{title}</Card.Title>
+        <Card.Body>
+          {ReactHtmlParser(content)}
+        </Card.Body>
+      </Card>
+    </Container>
   )
 }
 

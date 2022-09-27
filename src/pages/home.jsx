@@ -1,18 +1,17 @@
 import React from 'react';
+import { Container, Image, Row } from 'react-bootstrap';
 
-import profPic from '../assets/images/profpic.jpg';
+import profPic from '../assets/images/profpic2.jpg';
 
 export default function Home() {
   return (
-    <div className='home-page'>
-      <div className='portfolio-pic'>
-        <div className="image-circle">
-          <img src={profPic} alt="profilePicture"></img>
-        </div>
-      </div>
-      <div className="home-container">
-        <div className="text-container">
-          <h1>👋 Hello, my name is Trenton.
+    <Container fluid>
+      <Row className="myflex">
+        <Image src={profPic} roundedCircle alt="portfolio-picture" className="portfolio-pic" data-aos="fade-up" />
+      </Row>
+      <Row className="myflex dark-container">
+        <Container className="text-container">
+          <h1>Hello, my name is Trenton.
             I am a full-stack software developer from rural Kansas. I've
             worked as an instructor teaching new developers
             Python, Flask, JavaScript, ReactJS, MongoDB, SQL
@@ -20,6 +19,7 @@ export default function Home() {
             called devconnect which helps developers
             find mentors, learn innovative technologies, and find employment opportunities.
           </h1>
+          <br />
           <h1>
             I have an AAS in Information Technology and a BS
             in Computer Information Systems. I provide freelance tech services to local
@@ -27,8 +27,8 @@ export default function Home() {
             of my free time with them. Working remotely has significantly
             improved my life.
           </h1>
-        </div>
-      </div>
-    </div >
+        </Container>
+      </Row>
+    </Container >
   )
 }

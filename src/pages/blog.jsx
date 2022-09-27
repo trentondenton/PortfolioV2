@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import { Container } from 'react-bootstrap';
 
 import BlogItem from '../components/blogItem';
 
@@ -45,11 +46,9 @@ export default class Blog extends Component {
       return <BlogItem key={post.id} post={post} />
     });
     return (
-      <div className="blog-container">
-        <div className="blog-stuff">
-          {blogRecords}
-        </div>
-      </div>
+      <Container bg="secondary" fluid>
+        {blogRecords}
+      </Container>
     );
   }
 }

@@ -1,14 +1,7 @@
-.error-page {
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-
   .error-circle {
     height: 300px;
     width: 300px;
+    margin-top: 300px;
     border-radius: 50%;
     background-color: black;
     display: flex;
@@ -30,24 +23,35 @@
       animation: grow 3s infinite;
     }
 
+    &::before {
+      color: $accentColor;
+      content: '';
+      position: absolute;
+      height: 400px;
+      width: 400px;
+      border-radius: 50%;
+      background-color: $secondary;
+      z-index: -1;
+      animation: grow 3s infinite;
+    }
+
     a {
       color: $accentColor;
       text-decoration: none;
     }
   }
-}
 
-@keyframes grow {
-  0% {
-    color: black;
-  }
+  @keyframes grow {
+    0% {
+      color: black;
+    }
 
-  50% {
-    color: grey;
-    transform: scale(1.1);
-  }
+    50% {
+      color: grey;
+      transform: scale(1.1);
+    }
 
-  100% {
-    color: black;
+    100% {
+      color: black;
+    }
   }
-}

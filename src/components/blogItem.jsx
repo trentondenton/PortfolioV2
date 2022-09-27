@@ -1,9 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import striptags from "striptags";
+import { Card, Row } from 'react-bootstrap';
 
-import { IconChevronRightOutline } from "../components/icons";
+import { ChevronBarRight } from "react-bootstrap-icons";
 const BlogItem = props => {
+
   const {
     id,
     content,
@@ -13,16 +15,19 @@ const BlogItem = props => {
   const truncate = (str, n) => {
     return str.length >= n ? str.substr(0, n - 1) + '...' : str;
   };
+
   return (
-    <div>
-      <Link to={`/b/${id}`}>
-        <h2>{title}</h2>
-      </Link>
-      <div className="posts-container">
-        {truncate(striptags(content), 416)}
-        <Link to={`/b/${id}`}><IconChevronRightOutline className="arrow-icon" /></Link>
-      </div>
-    </div >
+    <Row className="myflex" style={{ paddingTop: '100px' }}>
+      <Card bg="secondary" text="primary" style={{ maxWidth: '80vw' }}>
+        <Card.Title style={{ margin: '10px' }}>{title}</Card.Title>
+        <Card.Body>
+          <Card.Text style={{ color: 'white' }}>
+            {truncate(striptags(content), 416)}
+          </Card.Text>
+          <Link to={`/b/${id}`}><ChevronBarRight className="arrow-icon" /></Link>
+        </Card.Body>
+      </Card>
+    </Row>
   );
 };
 

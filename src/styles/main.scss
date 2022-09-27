@@ -1,20 +1,13 @@
+// Variables
 @import './variables.scss';
-@import './base.scss';
-@import './navigation.scss';
 
-// Home Styles
-@import './home.scss';
-// Project Styles
-@import './projects.scss';
-// Contact Styles
-@import './contact.scss';
-// Footer Styles
-@import './footer.scss';
-// Media Styles
-@import './media.scss';
-// Blog Styles
-@import './blog.scss';
-// VCard Styles
-@import './vcard.scss';
-// Error Styles
+// Bootstrap Theme
+@import 'bootstrap.css';
+
+// Aos Animation Styles
+@import 'aos/dist/aos.css';
+
+// Custom Styles
+@import './base.scss';
+@import './custom.scss';
 @import './error.scss';

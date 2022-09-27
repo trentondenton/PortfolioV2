@@ -1,0 +1,82 @@
+// United 4.3.1
+// Bootswatch
+
+
+// Variables ===================================================================
+
+$web-font-path: "https://fonts.googleapis.com/css?family=Oxygen:400,700" !default;
+@import url($web-font-path);
+
+// Navbar ======================================================================
+
+// Buttons =====================================================================
+.footer-btn {
+  margin: 0 10px;
+}
+
+// Typography ==================================================================
+
+// Tables ======================================================================
+
+// Forms =======================================================================
+.myform {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+// Footer ========================================================================
+.myfooter {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  justify-items: center;
+}
+
+// Indicators ==================================================================
+
+// Progress bars ===============================================================
+
+// Containers ==================================================================
+.myflex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.myheader {
+  padding: 45px 0 25px 0;
+}
+
+.text-container {
+  margin-top: 80px;
+  max-width: 80vw;
+  letter-spacing: 1px;
+  cursor: default;
+  text-indent: 50px;
+}
+
+.dark-container {
+  background-color: $containerColor;
+  padding: 100px 0;
+  color: $white;
+  width: 100vw;
+  border-radius: 7px;
+}
+
+// Images ==================================================================
+.portfolio-pic {
+  margin-top: 100px;
+  width: 300px;
+  height: 300px;
+  margin-bottom: -150px;
+}
+
+.project-pic {
+  max-height: 150px;
+  max-width: 150px;
+  padding: 15px;
+}

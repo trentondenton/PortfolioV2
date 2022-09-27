@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import Aos from 'aos';
-import 'aos/dist/aos.css';
+import { Container, Button } from 'react-bootstrap';
+import { ArrowBarUp } from 'react-bootstrap-icons';
 
 import Contact from './contact';
 import Home from './home';
@@ -14,15 +15,15 @@ function Main() {
   }, []);
 
   return (
-    <div className="main">
+    <Container fluid>
       <div id="home">
-        <Home id="home" />
+        <Home />
       </div>
       <div id="projects" data-aos="slide-right">
-        <Projects id="projects" />
+        <Projects />
       </div>
       <div id="chart" data-aos="slide-left">
-        <h1 className="chart-title">Activity Chart</h1>
+        <h1 className="myflex myheader">Activity Chart</h1>
         <Chart id="chart" />
       </div>
       <div id="contact" data-aos="slide-right">
@@ -31,7 +32,7 @@ function Main() {
       <div id="footer">
         <Footer />
       </div>
-    </div>
+    </Container>
   )
 }
 

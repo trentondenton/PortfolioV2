@@ -44,7 +44,7 @@ const ActivityChart = (props) => {
           theme: {
             monochrome: {
               enabled: true,
-              color: '#00CB79',
+              color: '#E95420',
               shadeTo: 'light',
               shadeIntensity: 0.65
             }
@@ -60,7 +60,7 @@ const ActivityChart = (props) => {
           },
           fill: {
             opacity: [0.85, 0.25, 1],
-            colors: ["#00CB79", "#00CB79", "#00CB79"],
+            colors: ["#E95420", "#E95420", "#E95420"],
             gradient: {
               inverseColors: false,
               shade: "dark",

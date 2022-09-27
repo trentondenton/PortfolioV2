@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import axios from 'axios';
+import { Spinner, Container, Row } from "react-bootstrap";
 
 import ProjectItem from "../components/projectItem";
 
@@ -44,12 +45,17 @@ export default class Projects extends Component {
 
 
     return (
-      <div className="projects-page">
-        <h1>Projects</h1>
-        <div className="projects-container">
-          {this.portfolioItems()}
-        </div>
-      </div>
+      this.state.isLoading ?
+        <Spinner animation="border" />
+        :
+        <Container fluid>
+          <Row className="myflex myheader">
+            <h1>Projects</h1>
+          </Row>
+          <Row className="myflex">
+            {this.portfolioItems()}
+          </Row>
+        </Container>
     )
   }
 }
