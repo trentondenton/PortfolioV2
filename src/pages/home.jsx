@@ -5,7 +5,7 @@ import profPic from '../assets/images/profpic2.jpg';
 
 export default function Home() {
   return (
-    <Container fluid>
+    <Container>
       <Row className="myflex">
         <Image src={profPic} roundedCircle alt="portfolio-picture" className="portfolio-pic" data-aos="fade-up" />
       </Row>

@@ -47,6 +47,7 @@ $web-font-path: "https://fonts.googleapis.com/css?family=Oxygen:400,700" !defaul
   justify-content: center;
   align-items: center;
   align-content: center;
+  max-width: 100vw;
 }
 
 .myheader {
@@ -81,4 +82,9 @@ $web-font-path: "https://fonts.googleapis.com/css?family=Oxygen:400,700" !defaul
   max-height: 150px;
   max-width: 150px;
   padding: 15px;
+}
+
+data-aos {
+  width: 100vw;
+  overflow-x: hidden;
 }

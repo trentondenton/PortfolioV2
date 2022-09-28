@@ -38,10 +38,24 @@
 }
 
 html {
-  font-family: sans-serif;
+  font-family: 'Oxygen', sans-serif;
   line-height: 1.15;
+  scroll-behavior: smooth;
+  text-rendering: geometricPrecision;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.App {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  background-color: transparent;
 }
 
 article,
@@ -59,7 +73,8 @@ section {
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: 'Oxygen', sans-serif;
+  text-rendering: geometricPrecision;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -75,7 +90,7 @@ body {
 hr {
   box-sizing: content-box;
   height: 0;
-  overflow: visible;
+  overflow: hidden;
 }
 
 h1,
@@ -185,7 +200,7 @@ pre,
 code,
 kbd,
 samp {
-  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: 'Oxygen', sans-serif;
   font-size: 1em;
 }
 
@@ -573,25 +588,25 @@ pre code {
 
 @media (min-width: 576px) {
   .container {
-    max-width: 540px;
+    max-width: 100vw;
   }
 }
 
 @media (min-width: 768px) {
   .container {
-    max-width: 720px;
+    max-width: 100vw;
   }
 }
 
 @media (min-width: 992px) {
   .container {
-    max-width: 960px;
+    max-width: 100vw;
   }
 }
 
 @media (min-width: 1200px) {
   .container {
-    max-width: 1140px;
+    max-width: 100vw;
   }
 }
 
@@ -611,7 +626,7 @@ pre code {
 
   .container,
   .container-sm {
-    max-width: 540px;
+    max-width: 100vw
   }
 }
 
@@ -620,7 +635,7 @@ pre code {
   .container,
   .container-sm,
   .container-md {
-    max-width: 720px;
+    max-width: 100vw
   }
 }
 
@@ -630,7 +645,7 @@ pre code {
   .container-sm,
   .container-md,
   .container-lg {
-    max-width: 960px;
+    max-width: 100vw
   }
 }
 
@@ -641,7 +656,7 @@ pre code {
   .container-md,
   .container-lg,
   .container-xl {
-    max-width: 1140px;
+    max-width: 100vw
   }
 }
 
@@ -6350,7 +6365,7 @@ a.close.disabled {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: 'Oxygen', sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -6475,7 +6490,7 @@ a.close.disabled {
   z-index: 1060;
   display: block;
   max-width: 276px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: 'Oxygen', sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -10506,7 +10521,7 @@ button.bg-dark:focus {
 }
 
 .text-monospace {
-  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important;
+  font-family: 'Oxygen', sans-serif, monospace !important;
 }
 
 .text-justify {
@@ -10801,18 +10816,6 @@ a.text-dark:focus {
 
   @page {
     size: a3;
-  }
-
-  body {
-    min-width: 992px !important;
-  }
-
-  .container {
-    min-width: 992px !important;
-  }
-
-  .navbar {
-    display: none;
   }
 
   .badge {

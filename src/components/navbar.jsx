@@ -13,7 +13,7 @@ function Navbar() {
   const [active, setActive] = useState('default');
 
   return (
-    <NavBar variant="light" bg="white" expand="md" label="navigation" className="navbar fixed-top">
+    <NavBar variant="light" bg="white" expand="md" label="navigation" style={{ maxWidth: '100vw' }} className="fixed-top">
       <NavBar.Brand href="/">
         <Image alt="logo" src={Logo} />
       </NavBar.Brand>
