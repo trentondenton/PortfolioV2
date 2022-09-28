@@ -46,7 +46,7 @@ export default class Blog extends Component {
       return <BlogItem key={post.id} post={post} />
     });
     return (
-      <Container bg="secondary" fluid>
+      <Container bg="secondary" fluid style={{ paddingTop: '150px' }}>
         {blogRecords}
       </Container>
     );
