@@ -19,12 +19,12 @@ const BlogItem = props => {
   return (
     <Row className="myflex" style={{ paddingTop: '100px' }}>
       <Card bg="secondary" text="primary" style={{ maxWidth: '80vw' }}>
-        <Card.Title style={{ margin: '10px' }}>{title}</Card.Title>
+        <Card.Title className="p-3"><Link to={`/b/${id}`}>{title}</Link></Card.Title>
         <Card.Body>
-          <Card.Text style={{ color: 'white' }}>
+          <Card.Text className="p-3" style={{ color: 'white' }}>
             {truncate(striptags(content), 416)}
           </Card.Text>
-          <Link to={`/b/${id}`}><ChevronBarRight className="arrow-icon" /></Link>
+          <Link to={`/b/${id}`}><ChevronBarRight className="arrow-icon" />Read More</Link>
         </Card.Body>
       </Card>
     </Row>

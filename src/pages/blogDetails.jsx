@@ -1,12 +1,18 @@
 import React, { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import ReactHtmlParser from 'react-html-parser';
-import { Container, Card } from 'react-bootstrap';
+import { Container, Card, Button } from 'react-bootstrap';
+import { ChevronBarLeft } from "react-bootstrap-icons";
 
 export default function BlogDetails() {
   const [blogItem, setBlogItem] = useState({});
   const params = useParams();
+  const navigate = useNavigate();
+
+  const goBack = () => {
+    navigate(-1);
+  }
 
   useEffect(() => {
     axios
@@ -28,9 +34,10 @@ export default function BlogDetails() {
   } = blogItem;
   return (
     <Container className="myflex" style={{ marginTop: '100px' }}>
-      <Card bg="secondary" style={{ maxWidth: '80vw' }}>
-        <Card.Title>{title}</Card.Title>
-        <Card.Body>
+      <Button onClick={goBack} size="sm" variant="primary" className="mr-auto m-1"><ChevronBarLeft /> Back</Button>
+      <Card bg="secondary" text="primary" style={{ maxWidth: '80vw' }}>
+        <Card.Title className="p-3 m-auto">{title}</Card.Title>
+        <Card.Body className="p-3 m-auto" style={{ color: 'white', maxWidth: '80%' }}>
           {ReactHtmlParser(content)}
         </Card.Body>
       </Card>

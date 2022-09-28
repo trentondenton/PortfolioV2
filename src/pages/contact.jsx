@@ -9,7 +9,7 @@ function Contact() {
         <h1>Contact Me</h1>
       </Row>
       <Row className="dark-container myflex">
-        <Form className="myform" style={{ minWidth: "60vw" }} action="https://formsubmit.co/f5fa961f56f9dfc28b413b755d5e6c27" method="POST">
+        <Form className="myform" action="https://formsubmit.co/f5fa961f56f9dfc28b413b755d5e6c27" method="POST">
           <Form.Group controlId="formName">
             <Form.Label>Name</Form.Label>
             <Form.Control type="name" role="name" placeholder="Enter Name" />

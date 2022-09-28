@@ -23,6 +23,8 @@ $web-font-path: "https://fonts.googleapis.com/css?family=Oxygen:400,700" !defaul
   display: flex;
   justify-content: center;
   flex-direction: column;
+  width: 60vw;
+  max-width: 600px;
 }
 
 // Footer ========================================================================

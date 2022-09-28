@@ -1,7 +1,5 @@
 import React, { useEffect } from 'react';
 import Aos from 'aos';
-import { Container, Button } from 'react-bootstrap';
-import { ArrowBarUp } from 'react-bootstrap-icons';
 
 import Contact from './contact';
 import Home from './home';
@@ -15,7 +13,7 @@ function Main() {
   }, []);
 
   return (
-    <Container fluid>
+    <div>
       <div id="home">
         <Home />
       </div>
@@ -32,7 +30,7 @@ function Main() {
       <div id="footer">
         <Footer />
       </div>
-    </Container>
+    </div>
   )
 }
 

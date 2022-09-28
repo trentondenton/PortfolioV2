@@ -6,7 +6,7 @@ import moment from 'moment';
 export default function Footer() {
   const date = moment().format("YYYY")
   return (
-    <Navbar fluid position="fixed-bottom" className="myfooter">
+    <Navbar position="fixed-bottom" className="myfooter">
       <Nav>
         <h5><FaCopyright id="cpright" /> Trenton Denton {date}</h5>
       </Nav>
