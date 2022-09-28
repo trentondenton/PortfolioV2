@@ -6,7 +6,7 @@ import Navbar from './components/navbar';
 import Main from './pages/main';
 import Blog from './pages/blog';
 import BlogDetails from './pages/blogDetails';
-import VCard from './components/vcard';
+import VCard from './pages/vcard';
 import NotFound from './pages/notFound';
 
 

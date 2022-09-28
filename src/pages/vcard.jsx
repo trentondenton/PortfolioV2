@@ -3,8 +3,9 @@ import Aos from 'aos';
 import 'aos/dist/aos.css';
 
 import MyContact from '../assets/downloads/TDD.vcf';
-import portfolioPic from '../assets/images/profpic.jpg'
-export class VCard extends Component {
+import portfolioPic from '../assets/images/profpic.jpg';
+
+export default class VCard extends Component {
   componentDidMount() {
     Aos.init({ duration: 2000 });
   }
@@ -60,5 +61,3 @@ export class VCard extends Component {
     )
   }
 }
-
-export default VCard
