@@ -3,7 +3,6 @@ import { useParams, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import ReactHtmlParser from 'react-html-parser';
 import { Container, Card, Button } from 'react-bootstrap';
-import { ChevronBarLeft } from "react-bootstrap-icons";
 
 export default function BlogDetails() {
   const [blogItem, setBlogItem] = useState({});
@@ -33,14 +32,14 @@ export default function BlogDetails() {
     content,
   } = blogItem;
   return (
-    <Container className="myflex" style={{ marginTop: '100px' }}>
-      <Button onClick={goBack} size="sm" variant="primary" className="mr-auto m-1"><ChevronBarLeft /> Back</Button>
-      <Card bg="secondary" text="primary" style={{ maxWidth: '80vw' }}>
+    <Container className="myflex" style={{ marginTop: '100px', flexDirection: 'column' }}>
+      <Card bg="secondary" text="primary" style={{ maxWidth: '80vw', marginBottom: '10px' }}>
         <Card.Title className="p-3 m-auto">{title}</Card.Title>
         <Card.Body className="p-3 m-auto" style={{ color: 'white', maxWidth: '80%' }}>
           {ReactHtmlParser(content)}
         </Card.Body>
       </Card>
+      <Button onClick={goBack} size="sm" variant="primary" className="m-auto">Back</Button>
     </Container>
   )
 }
