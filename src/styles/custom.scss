@@ -35,6 +35,10 @@ $web-font-path: "https://fonts.googleapis.com/css?family=Oxygen:400,700" !defaul
   justify-content: space-between;
   text-align: center;
   justify-items: center;
+
+  h5 {
+    font-size: calc(10px + 1vmin);
+  }
 }
 
 // Indicators ==================================================================
