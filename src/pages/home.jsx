@@ -13,19 +13,14 @@ export default function Home() {
         <Container className="text-container">
           <h1>Hello, my name is Trenton.
             I am a full-stack software developer from rural Kansas. I've
-            worked as an instructor teaching new developers
-            Python, Flask, JavaScript, ReactJS, MongoDB, SQL
-            and more! I also work for a non-profit organization
-            called devconnect which helps developers
-            find mentors, learn innovative technologies, and find employment opportunities.
+            worked as an Instructor of Full Stack Development. I also work
+            for a non-profit organization called devconnect.
           </h1>
           <br />
           <h1>
-            I have an AAS in Information Technology and a BS
-            in Computer Information Systems. I provide freelance tech services to local
-            businesses. I also have 9 energetic canines. I spend a lot
-            of my free time with them. Working remotely has significantly
-            improved my life.
+            I have an AAS in IT and a BS in Computer Information Systems.
+            When I'm not educating myself or others you'll find me outdoors
+            with my 9 energetic canines.
           </h1>
         </Container>
       </Row>
