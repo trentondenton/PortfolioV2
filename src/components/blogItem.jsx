@@ -26,7 +26,7 @@ const BlogItem = props => {
         <Card.Title className="pl-3 mt-3"><Link to={`/b/${id}`}>{title}</Link></Card.Title>
         <Card.Body>
           <Card.Text style={{ color: 'white' }}>
-            {truncate(parsed_content, 416)}
+            {truncate(parsed_content, 200)}
           </Card.Text>
           <Link to={`/b/${id}`}><ChevronBarRight className="arrow-icon" />Read More</Link>
         </Card.Body>
