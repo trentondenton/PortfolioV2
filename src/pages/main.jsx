@@ -5,7 +5,6 @@ import Contact from './contact';
 import Home from './home';
 import Chart from './chart';
 import Projects from './projects';
-import Footer from '../components/footer';
 
 function Main() {
   useEffect(() => {
@@ -26,9 +25,6 @@ function Main() {
       </div>
       <div id="contact" data-aos="slide-right">
         <Contact />
-      </div>
-      <div id="footer">
-        <Footer />
       </div>
     </div>
   )

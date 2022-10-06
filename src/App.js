@@ -3,6 +3,7 @@ import { Routes, Route, useParams } from 'react-router-dom';
 
 import './styles/main.scss';
 import Navbar from './components/navbar';
+import Footer from './components/footer';
 import Main from './pages/main';
 import Blog from './pages/blog';
 import BlogDetails from './pages/blogDetails';
@@ -22,6 +23,7 @@ function App() {
         <Route path="/vcard" element={<VCard />} />
         <Route path="/*" element={<NotFound />} />
       </Routes>
+      <Footer />
     </div>
   );
 }
