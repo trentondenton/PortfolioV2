@@ -1,5 +1,4 @@
 .v-card-page {
-  height: 100vh;
   width: 100vw;
   display: flex;
   flex-direction: column;
@@ -7,22 +6,18 @@
   align-items: center;
 }
 
-.v-card-header {
-  img {
-    width: 200px;
-    height: 200px;
-    width: 100%;
+.v-card-image {
+    max-height: 250px;
+    max-width: 250px;
     border-radius: 50%;
-  }
-
-  position: fixed;
-  top: 115px;
+    margin-top: 150px;
 }
 
 .v-card {
+  position: inherit;
   width: 100vw;
-  height: 100vh;
-  margin-top: 200px;
+  height: 100%;
+  margin-top: -125px;
   background-color: $secondary;
   color: white;
   border-radius: 10px;
@@ -33,67 +28,16 @@
   align-items: center;
 
   .v-card-title {
+    margin-top: 150px;
+  }
+
+  .v-card-btn {
     display: flex;
-    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    align-items: center;
-    margin-top: 105px;
-    width: 100%;
-
-    h1 {
-      padding-top: 15px;
-      margin: 0;
-    }
-
-    h2 {
-      margin: 0;
-      padding: 0;
-    }
-  }
-
-  .v-card-socials {
-    width: 80vw;
-    max-width: 450px;
-    height: 10%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    width: 65vw;
+    height: 50px;
+    margin-top: 10px;
     margin-bottom: 10px;
-
-    a {
-      margin: 10px 0;
-      color: white;
-      font-size: 20px;
-      transition: 0.5s all ease-in-out;
-    }
-  }
-
-  .v-card-contact {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 100%;
-
-    a {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: white;
-      text-decoration: none;
-      font-weight: 600;
-      width: 90%;
-    }
-
-    .v-card-contact-item {
-      height: 50px;
-      width: 80vw;
-      max-width: 450px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border-radius: 7px;
-      background-color: $primary;
-    }
   }
 }

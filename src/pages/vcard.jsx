@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
+import {Container, Row, Button, Card} from 'react-bootstrap';
 import Aos from 'aos';
-import 'aos/dist/aos.css';
 
 import MyContact from '../assets/downloads/TDD.vcf';
-import portfolioPic from '../assets/images/profpic.jpg';
+import portfolioPic from '../assets/images/profpic2.jpg';
 
 export default class VCard extends Component {
   componentDidMount() {
@@ -11,53 +11,53 @@ export default class VCard extends Component {
   }
   render() {
     return (
-      <div className="v-card-page">
-        <div className="v-card-header">
-          <img src={portfolioPic} alt="trenton" data-aos="slide-down" />
-        </div>
-        <div className="v-card">
-          <div className="v-card-title">
-            <h1>Trenton Denton</h1>
-            <h2>Full Stack Developer</h2>
-          </div>
+      <Container fluid className="v-card-page">
+          <Card.Img variant="top" src={portfolioPic} alt="trenton" className="v-card-image" data-aos="fade-up" />
+        <Card className="v-card">
+          <Card.Title className="v-card-title">
+            Trenton Denton
+          </Card.Title>
+          <Card.Subtitle className="v-card-subtitle">
+            Software Engineer
+          </Card.Subtitle>
+          <Card.Body>
+            <Row className="myflex">
+              <Card.Link href="https://www.linkedin.com/in/trentondenton/" target="_blank">
+                <Button variant="secondary"><i className="fab fa-linkedin-in" /></Button>
+              </Card.Link>
 
-          <div className="v-card-socials">
-            <a href="https://www.linkedin.com/in/trentondenton/" target="_blank" rel="noopener noreferrer">
-              <i className="fab fa-linkedin-in" />
-            </a>
+              <Card.Link href="https://www.twitter.com/thetrentond" target="_blank">
+                <Button variant="secondary"><i className="fab fa-twitter" /></Button>
+              </Card.Link>
 
-            <a href="https://www.twitter.com/thetrentond" target="_blank" rel="noopener noreferrer">
-              <i className="fab fa-twitter" />
-            </a>
-
-            <a href="https://www.github.com/trentondenton" target="_blank" rel="noopener noreferrer">
-              <i className="fab fa-github" />
-            </a>
-          </div>
-          <div className="v-card-contact">
-            <a href={MyContact}>
-              <div className="v-card-contact-item">
-                Add Contact
-              </div>
-            </a>
-            <a href="/">
-              <div className="v-card-contact-item">
-                Portfolio
-              </div>
-            </a>
-            <a href="https://docs.google.com/document/d/1GkHOWUjJRH78FKXrNpEA0NxR4hEcbmd13JqmVCSAeHo/edit?usp=sharing" rel="noreferrer" target="_blank">
-              <div className="v-card-contact-item">
-                Student Projects
-              </div>
-            </a>
-            <a href="https://forms.gle/qrRDfhJQ7SHSttLg9" rel="noreferrer" target="_blank">
-              <div className="v-card-contact-item">
-                Bottega Inqueries
-              </div>
-            </a>
-          </div>
-        </div>
-      </div >
+              <Card.Link href="https://www.github.com/trentondenton" target="_blank">
+                <Button variant="secondary"><i className="fab fa-github" /></Button>
+              </Card.Link>
+            </Row>
+            <br/>
+              <Row className='myflex'>
+                <Button className="v-card-btn" href={MyContact}>
+                  Add Contact
+                </Button>
+              </Row>
+              <Row className='myflex'>
+                <Button className="v-card-btn" href="/">
+                  Portfolio
+                </Button>
+              </Row>
+              <Row className='myflex'>
+                <Button className="v-card-btn" href="https://docs.google.com/document/d/1GkHOWUjJRH78FKXrNpEA0NxR4hEcbmd13JqmVCSAeHo/edit?usp=sharing" target="_blank">
+                  Student Projects
+                </Button>
+              </Row>
+              <Row className='myflex'>
+                <Button className="v-card-btn" href="https://forms.gle/qrRDfhJQ7SHSttLg9" target="_blank">
+                  Bottega Inqueries
+                </Button>
+              </Row>
+          </Card.Body>
+        </Card>
+      </Container >
     )
   }
 }
