@@ -35,11 +35,11 @@ export default function BlogDetails() {
   } = blogItem;
   return (
     isLoading ?
-      <Container className="myflex" style={{ marginTop: '150px', flexDirection: 'column' }}>
+      <Container className="myflex" style={{ marginTop: '150px', flexDirection: 'column', minHeight: '77vh' }}>
         <Spinner animation="border" variant="primary" />
       </Container>
       :
-      <Container className="myflex" style={{ marginTop: '150px', flexDirection: 'column' }}>
+      <Container className="myflex" style={{ marginTop: '150px', flexDirection: 'column', minHeight: '77vh' }}>
         <Card bg="secondary" text="primary" style={{ maxWidth: '80vw', marginBottom: '10px' }}>
           <Card.Title className="p-3 m-auto">{title}</Card.Title>
           <Card.Body className="p-3 m-auto" style={{ color: 'white', maxWidth: '80%' }}>
