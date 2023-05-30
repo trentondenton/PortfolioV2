@@ -19,8 +19,7 @@ export default function Home() {
           <br />
           <h1>
             I have an AAS in IT and a BS in Computer Information Systems is anticipated in May of 2023.
-            When I'm not educating myself or others you'll find me outdoors
-            with my 9 energetic canines.
+            When I'm not educating myself or others you'll find me outdoors.
           </h1>
         </Container>
       </Row>
